@@ -1,19 +1,32 @@
 {
-  "name": "nodejs-docs-samples-speech",
+  "name": "Composr",
   "version": "0.0.1",
   "private": true,
   "license": "Apache Version 2.0",
-  "author": "Google Inc.",
+  "author": "Andrew Sosa",
+  "main": "main.js",
   "scripts": {
-    "test": "cd ..; npm run st -- --verbose speech/system-test/*.test.js"
+    "start": "electron ."
   },
   "dependencies": {
     "@google-cloud/speech": "0.9.0",
     "@google-cloud/storage": "1.0.0",
+    "async": "^2.3.0",
+    "electron": "^1.6.5",
+    "electron-pug": "^1.5.1",
+    "eslint": "^3.19.0",
+    "jquery": "^3.2.1",
     "node-record-lpcm16": "0.3.0",
+    "queue": "^4.2.1",
     "yargs": "7.0.2"
   },
   "engines": {
     "node": ">=4.3.2"
+  },
+  "devDependencies": {
+    "electron": "^1.6.5",
+    "electron-rebuild": "^1.5.7",
+    "eslint": "^3.19.0",
+    "eslint-config-google": "^0.7.1"
   }
 }
