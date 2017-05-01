@@ -1,0 +1,23 @@
+first paragraph
+new sentence
+start
+This is the first paragraph
+stop
+okay
+next sentence
+start
+This is the second sentence
+stop
+okay
+stop
+next paragraph
+new sentence
+start
+This is the second paragraph
+stop
+okay
+next sentence
+start
+This is the second sentence of the second paragraph
+stop
+stop

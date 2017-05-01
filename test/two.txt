@@ -1,0 +1,44 @@
+first paragraph
+
+new sentence
+start
+This is the first paragraph
+stop
+okay
+
+next sentence
+start
+This is the second sentence
+stop
+okay
+
+next sentence
+start
+This is the third sentence
+stop
+okay
+
+stop
+
+
+next paragraph
+
+next sentence
+start
+This is a new sentence
+stop
+okay
+
+stop
+
+
+next paragraph
+
+next sentence
+start
+This is the last sentence
+stop
+okay
+
+
+stop
