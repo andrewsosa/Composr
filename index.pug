@@ -3,10 +3,15 @@ html
     title Composr
     meta(charset="UTF-8")
     link(rel="stylesheet", href="res/styles.css")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+
     
   body
-    p#text
-    
-      
-  script.
-    require('./renderer.js')  
+    .content
+    .ap_wrap
+      p#active_paragraph
+    .as_wrap
+      p#active_sentence
+    .record
+    script.
+      require('./renderer.js')  

@@ -1,13 +1,57 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
-button {
-    border: none;
-    height: 56px;
-    width: 56px;
-    border-radius: 50%;
+    font-family: sans-serif;
+    background-color: #fefefe
+}
+
+
+.content {
+    flex-grow: 2;
+}
+
+.content::before {
+    content: "Content:"
+}
+
+.ap_wrap::before {
+    content: "Active Paragraph:"
+}
+
+.as_wrap::before {
+    content: "Active Sentence:"
+}
+
+.as_wrap, .ap_wrap {
+    margin-right: 72px;
+}
+
+.record {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
 
     position: absolute;
-    bottom: 0;
-    left: auto;
-    right:auto;
+    bottom: 16px;
+    right: 16px;
 
+    border: 12px solid #EF5350;
+    background-color: #fff;
+
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+
+}
+
+*::before {
+    font-weight: 600;
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+p {
+    margin-top: 4px;
 }
