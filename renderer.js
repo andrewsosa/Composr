@@ -57,21 +57,21 @@ content.update = function (payload) {
 composer = compose(data => content.update(data));
 
 
-$('.record').on('click', () => {
-
-    recognize(function (chunk) {
-        console.log(`chunk ${chunk}`);
-        composer.handleTextChunk(chunk);
-    });
-
-});
-
-
-// fs.readFile('test/two.txt', 'utf8', function (err, data) {
-//     if(err) console.log(err);
-//     lines = data.split('\n');
-//     // console.log(lines);
-//     for(i = 0; i < lines.length; i++) {
-//         composer.handleTextChunk(lines[i]);
-//     }
+// $('.record').on('click', () => {
+//
+//     recognize(function (chunk) {
+//         console.log(`chunk ${chunk}`);
+//         composer.handleTextChunk(chunk);
+//     });
+//
 // });
+
+
+fs.readFile('test/two.txt', 'utf8', function (err, data) {
+    if(err) console.log(err);
+    lines = data.split('\n');
+    // console.log(lines);
+    for(i = 0; i < lines.length; i++) {
+        composer.handleTextChunk(lines[i]);
+    }
+});
